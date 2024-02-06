@@ -1,7 +1,9 @@
+import {Flights} from "./components/FlightContainer/Flights";
+
 const App= () => {
     return (
         <div>
-            App
+            <Flights/>
         </div>
     );
 };
