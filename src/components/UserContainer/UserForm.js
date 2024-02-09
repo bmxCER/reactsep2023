@@ -1,7 +1,7 @@
 import {useForm} from "react-hook-form";
 import {create} from "axios";
 
-import {userService} from "../services/userService";
+import {userService} from "../../services/userService";
 
 
 const UserForm = ({setUsers}) => {
