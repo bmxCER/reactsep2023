@@ -3,6 +3,7 @@ import {TodosPages} from "./pages/TodosPages";
 import {AlbumsPages} from "./pages/AlbumsPages";
 import {MainLayout} from "./layout/MainLayout";
 import {CommentsPage} from "./pages/CommentsPage";
+import {PostsPage} from "./pages/PostsPage";
 
 const router = createBrowserRouter([
     {
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
                 path:'albums', element:<AlbumsPages/>
             },
             {
-                path:'comments', element:<CommentsPage/>
+                path:'comments', element:<CommentsPage/>, children:[
+                    {
+                        path:'posts', element:<PostsPage/>
+                    }
+                ]
             }
         ]
     }
